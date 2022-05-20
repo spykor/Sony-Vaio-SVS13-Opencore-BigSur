@@ -1,7 +1,7 @@
 # Opencore for Sony Vaio SVS13A1S9ES updated for Big Sur with BCM94352HMB wifi support
 
 
-Specifications
+**Specifications**
 
 Sony Vaio SVS13A1S9ES 13.3″
 
@@ -18,7 +18,7 @@ Ethernet card Realtek RTL8168E-VL/8111E-VL PCI Express Gigabit Ethernet
 WiFi/BT card Azurewave AW-CE123H half mini PCIe card
 
 
-Background
+**Background**
 
 Everything was working fine until I tried to upgrade from Catalina 10.15.7 to Big Sur 11.2, which is the highest version of macOS this type of CPU (Ivy Bridge) supports.
 
@@ -28,12 +28,12 @@ The other thing is that while Bluetooth works fine (WiFi/BT combo half mini card
 
 Opencore version that works right is 0.6.5! Everything above that report system incompatibility.
 
-Prerequisites
+**Prerequisites**
 
 Upgrade all related items (kexts for Broadcom chips and wifi) to the latest versions (AirtportBrcmFixup.kext, BrcmBluetoothInjector.kext, BrcmFirmwareData.kext, BrcmPatchRAM3.kext, FakePCIID_Broadcom_WiFi.kext, FakePCIID.kext, etc) and while I was at it upgrade other kexts too (VirtualSMC.kext, Lily.kext, WhateverGreen.kext, etc). 
 
 
-Solution for fixing no wifi
+**Solution for fixing no wifi**
 
 Download IO80211Catalina.kext from https://github.com/khronokernel/IO80211-Patches and inject it by using the Opencore config.plist.
 
@@ -43,7 +43,7 @@ Open config.plist using ProperTree editor and take an OC Snapshot (command + R) 
 
 Eject the EFI partition and reboot. Clear the NVRAM once just in case.
 
-What works:
+**What works:**
 
 built-in keyboard (with brightness keys)
 
