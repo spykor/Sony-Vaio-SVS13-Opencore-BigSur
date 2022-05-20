@@ -46,18 +46,33 @@ Eject the EFI partition and reboot. Clear the NVRAM once just in case.
 What works:
 
 built-in keyboard (with brightness keys)
+
 built-in trackpad (multi gestures)
+
 HDMI video/audio with hotplug
+
 native WiFi via BCM94352HMB
+
 Bluetooth (with handoff) using BCM94352HMB
+
 native USB3
+
 native audio with AppleHDA
+
 built-in mic
+
 built-in camera
+
 native power management
+
 battery status
+
 backlight controls
+
 sleep
-accelerated graphics for HD4000 including OpenCL
+
+accelerated graphics for HD4000
+
 wired Ethernet
+
 
