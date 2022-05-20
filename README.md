@@ -1,4 +1,3 @@
-# Sony-Vaio-SVS13-Opencore-BigSur
 # Opencore for Sony Vaio SVS13A1S9ES updated for Big Sur with BCM94352HMB wifi support
 
 
