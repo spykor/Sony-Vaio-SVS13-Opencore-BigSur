@@ -44,6 +44,10 @@ In case system reboots before reaching the apple logo, boot from another source,
 
 Eject the EFI partition and reboot. Clear the NVRAM once just in case.
 
+**Important note**
+
+For someone who is initilally installing the macOS to Vaio SVS13 laptop, he/she needs to do some seriouw DSDT and SSDT patching. Follow the instructions from this article to do that https://www.insanelymac.com/forum/topic/309549-el-capitan-uefi-clover-on-sony-vaio-s/
+
 **What works:**
 
 built-in keyboard (with brightness keys)
