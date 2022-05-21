@@ -39,7 +39,8 @@ Download IO80211Catalina.kext from https://github.com/khronokernel/IO80211-Patch
 
 Mount EFI partition of the system disk using ESP mounter app. Copy IO80211Catalina.kext to the EFI>OC>Kexts section. Leave the standard AirtportBrcmFixup.kext in which includes both plugins.
 
-Open config.plist using ProperTree editor and take an OC Snapshot (command + R) to include the new kext and save the file again. Close the application.
+Open config.plist using ProperTree editor and take an **OC Snapshot** (command + R) to include the new kext and save the file again. Close the application.
+In case system reboots before reaching the apple logo, boot from another source, mount EFI partition, load **config.plist** with ProperTree and set **AirPortBrcm4360_Injector.kext** to **"false"** in the Kernel>Add section. Also you might set **MaxKernel** to 19.9.9. also.
 
 Eject the EFI partition and reboot. Clear the NVRAM once just in case.
 
