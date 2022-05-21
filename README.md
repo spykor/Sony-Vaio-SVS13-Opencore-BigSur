@@ -46,7 +46,7 @@ Eject the EFI partition and reboot. Clear the NVRAM once just in case.
 
 **Important note**
 
-For someone who is initilally installing the macOS to Vaio SVS13 laptop, he/she needs to do some seriouw DSDT and SSDT patching. Follow the instructions from this article to do that https://www.insanelymac.com/forum/topic/309549-el-capitan-uefi-clover-on-sony-vaio-s/
+For someone who is initilally installing the macOS to Vaio SVS13 laptop, he/she needs to do some serious DSDT and SSDT patching. Follow the instructions from this article to do that https://www.insanelymac.com/forum/topic/309549-el-capitan-uefi-clover-on-sony-vaio-s/
 
 **What works:**
 
