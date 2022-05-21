@@ -20,7 +20,7 @@ WiFi/BT card Azurewave AW-CE123H half mini PCIe card
 
 **Background**
 
-Everything was working fine until I tried to upgrade from Catalina 10.15.7 to Big Sur 11.2, which is the highest version of macOS this type of CPU (Ivy Bridge) supports.
+Everything was working fine until I tried to upgrade from Catalina 10.15.7 to Big Sur 11.1 (20C69), which is the highest version of macOS this type of CPU (Ivy Bridge) supports.
 
 
 The other thing is that while Bluetooth works fine (WiFi/BT combo half mini card), wifi does not work and the system does not detect at all the wifi part. as I said everything was workin fine on Catalina.
