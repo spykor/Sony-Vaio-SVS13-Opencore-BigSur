@@ -67,12 +67,14 @@ native power management
 
 battery status
 
-backlight controls
-
 sleep
 
 accelerated graphics for HD4000
 
 wired Ethernet
+
+**What doesn't work**
+
+Brightness control
 
 
