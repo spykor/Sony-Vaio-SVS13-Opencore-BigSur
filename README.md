@@ -49,7 +49,7 @@ For someone who is initilally installing the macOS to Vaio SVS13 laptop, he/she 
 
 **What works:**
 
-built-in keyboard (with brightness keys)
+built-in keyboard
 
 built-in trackpad (multi gestures)
 
