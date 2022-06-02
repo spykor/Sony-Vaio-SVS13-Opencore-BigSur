@@ -1,4 +1,4 @@
-# Opencore for Sony Vaio SVS13A1S9ES updated for Big Sur with BCM94352HMB wifi support and Brightness control
+# Opencore for Sony Vaio SVS13A1S9ES updated for Big Sur with BCM94352HMB wifi support and Brightness control (AppleBacklightFixup.kext)
 
 
 **Specifications**
@@ -49,6 +49,7 @@ For an unknown reason Big Sur broke screen brightness.
 After succesfully installing Big Sur onto Sony Vaio SVS13, controlling Screen Brightness was not possible anymore, either by using the function keys (Pause/Break = Up, Fn+Delete/ScrLK = Down) that were perfectly working on Catalina, or by using the slide in the System Preferences > Displays.
 
 To fix the problem follow the instructions from this tutorial: https://www.youtube.com/watch?v=UDev1FdhUr8
+or this https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightfixup-kext.218222/
 
 Download the appropriate files from the tutorial's links and place them in the OC appropeiate directories (ACPI, Kexts) and edit the config.plist.
 
