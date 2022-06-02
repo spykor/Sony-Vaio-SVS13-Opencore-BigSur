@@ -1,4 +1,4 @@
-# Opencore for Sony Vaio SVS13A1S9ES updated for Big Sur with BCM94352HMB wifi support
+# Opencore for Sony Vaio SVS13A1S9ES updated for Big Sur with BCM94352HMB wifi support and Brightness control
 
 
 **Specifications**
@@ -43,6 +43,31 @@ Open **config.plist** using **ProperTree** editor and take an **OC Snapshot** (c
 
 Eject the EFI partition and reboot. Clear the NVRAM once just in case.
 
+**Fixing Brightness Control**
+
+For an unknown reason Big Sur broke screen brightness. 
+After succesfully installing Big Sur onto Sony Vaio SVS13, controlling Screen Brightness was not possible anymore, either by using the function keys (Pause/Break = Up, Fn+Delete/ScrLK = Down) that were perfectly working on Catalina, or by using the slide in the System Preferences > Displays.
+
+To fix the problem follow the instructions from this tutorial: https://www.youtube.com/watch?v=UDev1FdhUr8
+
+Download the appropriate files from the tutorial's links and place them in the OC appropeiate directories (ACPI, Kexts) and edit the config.plist.
+
+The tricky part is to remove the Brightness fix patch done to the DSDT that was working up to Catalina, because the fix for Big Sur requires the removal of the DSDT patch.
+Here are the steps:
+
+Copy the patched DSDT from EFI>OC>ACPI to Desktop.
+Keep a copy of it for backup reasons
+Disassemble it by using iasl -da -dl DSDT.aml
+Open the dsl file with **MaciASL** and locate the Brightness patch (Device (PNLF)) and mark down the lines range of the patch.
+Open the dsl file with an editor and delete the lines of the patch and save the file.
+Open the edited file with MaciASL again, compile the file and see if everuthing is OK.
+If it's OK, execute "Save as..." and save the file as Machine Language file (aml).
+Place the newly compiled DSDT.aml into EFI>OC>ACPI, together with the other files of the Brightness fix (kexts, etc).
+Open the config.plist with ProperTree editor, execute a Snapshot (Command+R) and save the new config.plist.
+Unmount the ESP partition (EFI) and reboot the system
+
+You should now have a working Brighness control.
+
 **Important note**
 
 For someone who is initilally installing the macOS to Vaio SVS13 laptop, he/she needs to do some serious DSDT and SSDT patching. Follow the instructions from this article to do that https://www.insanelymac.com/forum/topic/309549-el-capitan-uefi-clover-on-sony-vaio-s/
@@ -80,5 +105,8 @@ wired Ethernet
 **What doesn't work**
 
 Brightness control
+
+**Brightness control works after new patching**
+
 
 
