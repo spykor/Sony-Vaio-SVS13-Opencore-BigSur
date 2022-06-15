@@ -59,7 +59,7 @@ Here are the steps:
 
 Copy the patched DSDT from EFI>OC>ACPI to Desktop.
 Keep a copy of it for backup reasons
-Disassemble it by using iasl -da -dl DSDT.aml
+Disassemble it by using **iasl -da -dl DSDT.aml**
 Open the dsl file with **MaciASL** and locate the Brightness patch (Device (PNLF)) and mark down the lines range of the patch.
 Open the dsl file with an editor and delete the lines of the patch and save the file.
 Open the edited file with MaciASL again, compile the file and see if everuthing is OK.
