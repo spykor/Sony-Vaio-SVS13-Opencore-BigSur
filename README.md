@@ -37,7 +37,7 @@ Upgrade all related items (kexts for Broadcom chips and wifi) to the latest vers
 
 Download IO80211Catalina.kext from https://github.com/khronokernel/IO80211-Patches and inject it by using the Opencore config.plist.
 
-Mount EFI partition of the system disk using ESP mounter app. Copy IO80211Catalina.kext to the EFI>OC>Kexts section. Leave the standard AirtportBrcmFixup.kext in which includes both plugins.
+Mount EFI partition of the system disk using ESP mounter app. Copy **IO80211Catalina.kext** to the EFI>OC>Kexts section. Leave the standard AirtportBrcmFixup.kext in which includes both plugins.
 
 Open **config.plist** using **ProperTree** editor and take an **OC Snapshot** (command + R) to include the new kext and save the file again. Set **AirPortBrcm4360_Injector.kext** to **"false"** in the Kernel>Add section. Also you might set **MaxKernel** to 19.9.9. Close the application.
 
@@ -53,7 +53,8 @@ or this https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-
 
 Download the appropriate files from the tutorial's links and place them in the OC appropeiate directories (ACPI, Kexts) and edit the config.plist.
 
-The tricky part is to remove the Brightness fix patch done to the DSDT that was working up to Catalina, because the fix for Big Sur requires the removal of the DSDT patch.
+The tricky part is to **remove the Brightness fix patch done to the DSDT** that was working up to Catalina, because the fix for Big Sur requires the removal of the DSDT patch.
+
 Here are the steps:
 
 Copy the patched DSDT from EFI>OC>ACPI to Desktop.
