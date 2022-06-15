@@ -58,14 +58,23 @@ The tricky part is to **remove the Brightness fix patch done to the DSDT** that 
 Here are the steps:
 
 Copy the patched DSDT from EFI>OC>ACPI to Desktop.
+
 Keep a copy of it for backup reasons
+
 Disassemble it by using **iasl -da -dl DSDT.aml**
+
 Open the dsl file with **MaciASL** and locate the Brightness patch (Device (PNLF)) and mark down the lines range of the patch.
+
 Open the dsl file with an editor and delete the lines of the patch and save the file.
+
 Open the edited file with MaciASL again, compile the file and see if everuthing is OK.
+
 If it's OK, execute "Save as..." and save the file as Machine Language file (aml).
+
 Place the newly compiled DSDT.aml into EFI>OC>ACPI, together with the other files of the Brightness fix (kexts, etc).
+
 Open the config.plist with ProperTree editor, execute a Snapshot (Command+R) and save the new config.plist.
+
 Unmount the ESP partition (EFI) and reboot the system
 
 You should now have a working Brighness control.
