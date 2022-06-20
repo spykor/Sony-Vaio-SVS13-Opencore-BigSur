@@ -113,11 +113,8 @@ accelerated graphics for HD4000
 
 wired Ethernet
 
-**What doesn't work**
+Brightness control (after removing DSDT patching for brightness and injecting **AppleBacklightFixup.kext** with Opencore)
 
-Brightness control
-
-**Brightness control works after new patching**
 
 
 
