@@ -115,6 +115,8 @@ wired Ethernet
 
 Brightness control (after removing DSDT patching for brightness and injecting **AppleBacklightFixup.kext** with Opencore)
 
+Brightness control keys: Pause/Break = Up, Fn + Delete/Scr Lk = Down
+
 
 
 
